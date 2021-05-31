@@ -245,6 +245,9 @@ Adicionalmente se puede agregar opcionalmente una lista de usuarios para guardar
 from twigy import Requester
 import pandas as pd
 
+token = 'AQUÍ_VA_EL_TOKEN'
+tw_req = Requester(token)
+
 user_id = '36121150'
 
 users = []
