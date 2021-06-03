@@ -787,6 +787,7 @@ class Requester():
                 includes = respuesta.json().get('includes')
                 if datos is not None:
                     tweets_to_list(datos, lista_tweets, my_date)
+                    tweets_count = len(lista_tweets)
                 if lista_users is not None and includes is not None:
                     usuarios = includes.get('users')
                     if usuarios is not None:
@@ -869,6 +870,7 @@ class Requester():
                 includes = respuesta.json().get('includes')
                 if datos is not None:
                     tweets_to_list(datos, lista_tweets, my_date)
+                    tweets_count = len(lista_tweets)
                 if lista_users is not None and includes is not None:
                     usuarios = includes.get('users')
                     if usuarios is not None:
@@ -952,6 +954,7 @@ class Requester():
                 includes = respuesta.json().get('includes')
                 if datos is not None:
                     tweets_to_list(datos, lista_tweets, my_date)
+                    tweets_count = len(lista_tweets)
                 if lista_users is not None and includes is not None:
                     usuarios = includes.get('users')
                     if usuarios is not None:
@@ -1037,6 +1040,7 @@ class Requester():
                 includes = respuesta.json().get('includes')
                 if datos is not None:
                     tweets_to_list(datos, lista_tweets, my_date)
+                    tweets_count = len(lista_tweets)
                 if lista_users is not None and includes is not None:
                     usuarios = includes.get('users')
                     if usuarios is not None:
